@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "author": "Tara Westover",
+    "title": "Educated",
+    "price": "₹379",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/71-4MkLN5jL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A powerful memoir about resilience, education, and breaking free from a restrictive upbringing."
+  },
+  {
+    "id": 2,
+    "author": "George Orwell",
+    "title": "1984",
+    "price": "₹700",
+    "category": "Fiction",
+    "image": "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+    "description": "A dystopian novel exploring surveillance, totalitarianism, and individual freedom."
+  },
+  {
+    "id": 3,
+    "author": "Ruskin Bond",
+    "title": "The Blue Umbrella",
+    "price": "₹200",
+    "category": "Sale",
+    "image": "https://www.jogenii.com/cdn/shop/products/9788131948576_1024x.jpg?v=1652095917",
+    "description": "A heartwarming tale of kindness and simplicity set in the picturesque hills."
+  },
+  {
+    "id": 4,
+    "author": "Margaret Atwood",
+    "title": "The Handmaid's Tale",
+    "price": "₹650",
+    "category": "Fiction",
+    "image": "https://m.media-amazon.com/images/I/710n0UUdaXL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A powerful dystopian story of a woman navigating a repressive regime."
+  },
+  {
+    "id": 5,
+    "author": "R.F. Kuang",
+    "title": "The Poppy War",
+    "price": "₹349",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/71Ybjd-4f9L._AC_UF1000,1000_QL80_.jpg",
+    "description": "A dark and gripping fantasy inspired by Chinese history and mythology."
+  },
+  {
+    "id": 6,
+    "author": "F. Scott Fitzgerald",
+    "title": "The Great Gatsby",
+    "price": "₹500",
+    "category": "Classic",
+    "image": "https://m.media-amazon.com/images/I/81uot7BFoOL._UF1000,1000_QL80_.jpg",
+    "description": "A tragic story of love, wealth, and betrayal set in the Jazz Age."
+  },
+  {
+    "id": 7,
+    "author": "John Green",
+    "title": "The Fault in Our Stars",
+    "price": "₹399",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/817tHNcyAgL.jpg",
+    "description": "A touching love story of two teenagers navigating life and loss with humor and grace."
+  },
+  {
+    "id": 8,
+    "author": "Michelle Obama",
+    "title": "Becoming",
+    "price": "₹799",
+    "category": "Non-fiction",
+    "image": "https://m.media-amazon.com/images/I/81h2gWPTYJL.jpg",
+    "description": "A deeply personal memoir from the former First Lady of the United States."
+  },
+  {
+    "id": 9,
+    "author": "Chetan Bhagat",
+    "title": "2 States",
+    "price": "₹399",
+    "category": "Sale",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/l0r1j0w0/regionalbooks/5/p/c/two-stetus-original-imagcg8uyubchaph.jpeg?q=90&crop=false",
+    "description": "A humorous and touching story of love, cultural differences, and family drama."
+  },
+  {
+    "id": 10,
+    "author": "Sudha Murthy",
+    "title": "Wise and Otherwise",
+    "price": "₹150",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/81HP7-DUQKL.jpg",
+    "description": "A thought-provoking collection of real-life stories showcasing compassion and human values."
+  },
+  {
+    "id": 11,
+    "author": "Harper Lee",
+    "title": "To Kill a Mockingbird",
+    "price": "₹650",
+    "category": "Classic",
+    "image": "https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A moving story of racial injustice and moral growth in the Deep South."
+  },
+  {
+    "id": 12,
+    "author": "Samantha Shannon",
+    "title": "The Priory of the Orange Tree",
+    "price": "₹399",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/91JR5HRL84L._UF1000,1000_QL80_.jpg",
+    "description": "An epic fantasy with dragons, intrigue, and strong female characters."
+  },
+  {
+    "id": 13,
+    "author": "R.K. Narayan",
+    "title": "Malgudi Days",
+    "price": "₹180",
+    "category": "Sale",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_lFFC1DoVBT07eeO3_PtE7WS32g3sFfVXQ&s",
+    "description": "A delightful collection of short stories set in the fictional town of Malgudi."
+  },
+  {
+    "id": 14,
+    "author": "Jane Austen",
+    "title": "Pride and Prejudice",
+    "price": "₹600",
+    "category": "Classic",
+    "image": "https://m.media-amazon.com/images/I/81GqtNbs+PL.jpg",
+    "description": "A timeless romance that explores themes of love, class, and society."
+  },
+  {
+    "id": 15,
+    "author": "APJ Abdul Kalam",
+    "title": "Wings of Fire",
+    "price": "₹350",
+    "category": "Sale",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5W0-pD7-wWSkN8WdyfvSuSjMEDxhfoHSljQ&s",
+    "description": "An inspiring autobiography of India's Missile Man, tracing his journey of dreams and achievements."
+  },
+  {
+    "id": 16,
+    "author": "Amish Tripathi",
+    "title": "The Immortals of Meluha",
+    "price": "₹250",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1334659192i/7913305.jpg",
+    "description": "The first book in the Shiva Trilogy, a gripping tale of myth, legend, and action."
+  },
+  {
+    "id": 17,
+    "author": "Sujata Massey",
+    "title": "The Satapur Moonstone",
+    "price": "₹299",
+    "category": "Sale",
+    "image": "https://m.media-amazon.com/images/I/81kwj0J6qGL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A historical mystery novel filled with intrigue and suspense set in 1920s India."
+  },
+  {
+    "id": 18,
+    "author": "Ernest Hemingway",
+    "title": "The Old Man and the Sea",
+    "price": "₹500",
+    "category": "Classic",
+    "image": "https://m.media-amazon.com/images/I/61y4XeiQLnL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A tale of perseverance and human spirit, told through the story of an aging fisherman."
+  },
+  {
+    "id": 19,
+    "author": "Yuval Noah Harari",
+    "title": "Sapiens",
+    "price": "₹899",
+    "category": "Non-fiction",
+    "image": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+    "description": "A groundbreaking exploration of the history and impact of humankind."
+  },
+    {
+      "id": 20,
+      "author": "J.K. Rowling",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "price": "₹999",
+      "category": "Fantasy",
+      "image": "https://m.media-amazon.com/images/I/71XqqKTZz7L._AC_UF1000,1000_QL80_.jpg",
+      "description": "The magical journey of a young wizard discovering his true destiny."
+    },
+    {
+      "id": 21,
+      "author": "Dan Brown",
+      "title": "The Da Vinci Code",
+      "price": "₹1,099",
+      "category": "Thriller",
+      "image": "https://m.media-amazon.com/images/I/71y4X5150dL.jpg",
+      "description": "A gripping thriller that explores secrets hidden in history and religion."
+    },
+    {
+      "id": 22,
+      "author": "Margaret Atwood",
+      "title": "The Testaments",
+      "price": "₹1,250",
+      "category": "Fiction",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHTVdN8aI7kTY5xBhVMbIWwi4N1QA6mOPzg&s",
+      "description": "A powerful sequel to 'The Handmaid's Tale' exploring the fate of Gilead."
+    },
+    {
+      "id": 23,
+      "author": "Malcolm Gladwell",
+      "title": "Outliers",
+      "price": "₹1,199",
+      "category": "Non-fiction",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1344266315i/3228917.jpg",
+      "description": "An exploration of the factors that contribute to high levels of success."
+    },
+    {
+      "id": 24,
+      "author": "Haruki Murakami",
+      "title": "1Q84",
+      "price": "₹1,500",
+      "category": "Fiction",
+      "image": "https://m.media-amazon.com/images/I/71lZNBoOlJL._AC_UF1000,1000_QL80_.jpg",
+      "description": "A surreal, complex novel blending alternate realities, love, and mystery."
+    },
+    {
+      "id": 25,
+      "author": "Stephen Hawking",
+      "title": "A Brief History of Time",
+      "price": "₹1,199",
+      "category": "Science",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/kingqkw0-0/book/9/y/q/a-brief-history-of-time-original-imafyej2kgzkhgzg.jpeg?q=90&crop=false",
+      "description": "An accessible explanation of the universe's most profound mysteries."
+    },
+    {
+      "id": 26,
+      "author": "Yuval Noah Harari",
+      "title": "Homo Deus",
+      "price": "₹1,349",
+      "category": "Non-fiction",
+      "image": "https://m.media-amazon.com/images/I/71N6LbagzSL.jpg",
+      "description": "A visionary exploration of the future of humankind, tackling artificial intelligence and human enhancement."
+    },
+    {
+      "id": 27,
+      "author": "Toni Morrison",
+      "title": "Beloved",
+      "price": "₹1,099",
+      "category": "Fiction",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1722944318i/6149.jpg",
+      "description": "A haunting novel about the legacy of slavery and the struggle for identity."
+    },
+    {
+      "id": 28,
+      "author": "David McKee",
+      "title": "Elmer the Patchwork Elephant",
+      "price": "₹1,500",
+      "category": "Children's",
+      "image": "https://m.media-amazon.com/images/I/91GMYesQQYL.jpg",
+      "description": "A beloved children's story about diversity, individuality, and friendship."
+    },
+    {
+      "id": 29,
+      "author": "James Clear",
+      "title": "Atomic Habits",
+      "price": "₹1,299",
+      "category": "Self-help",
+      "image": "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
+      "description": "A guide to building good habits and breaking bad ones for lasting change."
+    },
+    {
+      "id": 30,
+      "author": "Neil deGrasse Tyson",
+      "title": "Astrophysics for People in a Hurry",
+      "price": "₹1,350",
+      "category": "Science",
+      "image": "https://m.media-amazon.com/images/I/914EiU2QImL._AC_UF1000,1000_QL80_.jpg",
+      "description": "A concise and engaging explanation of the universe and our place in it."
+    }
+]

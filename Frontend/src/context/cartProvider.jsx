@@ -3,7 +3,6 @@ import { useAuth } from './AuthProvider';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
-// Create context
 const CartContext = createContext();
 
 export function CartProvider({ children }) {

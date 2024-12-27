@@ -32,10 +32,10 @@ mongoose.connection.on('error', (err) => {
     console.error('MongoDB connection error:', err);
 });
 
-// Define routes - remove /api prefix since it will be handled by the proxy
+// Define routes
 app.use('/book', bookRoute);
 app.use('/user', userRoute);
-app.use('/cart', cartRoute);  // Changed from /api/cart to /cart
+app.use('/cart', cartRoute); 
 
 // Error handling middleware
 app.use((err, req, res, next) => {

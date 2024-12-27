@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState, useRef } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthProvider';
 import { useCart } from '../context/cartProvider';
 import Login from './Login';
@@ -10,7 +10,10 @@ function Navbar() {
   const [authUser] = useAuth();
   const { cart } = useCart();
   const navigate = useNavigate();
+  const location = useLocation();
   const [sticky, setSticky] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const searchTimeout = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,24 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (searchTimeout.current) {
+      clearTimeout(searchTimeout.current);
+    }
+    
+    if (searchQuery !== '') {
+      searchTimeout.current = setTimeout(() => {
+        navigate(`/book?search=${encodeURIComponent(searchQuery)}`);
+      }, 500);
+    }
+    
+    return () => {
+      if (searchTimeout.current) {
+        clearTimeout(searchTimeout.current);
+      }
+    };
+  }, [searchQuery, navigate]);
 
   const handleBooksClick = (e) => {
     if (!authUser) {
@@ -35,17 +56,27 @@ function Navbar() {
     }
   };
 
+  const handleHomeClick = () => {
+    setSearchQuery('');
+  };
+
+  const handleLinkClick = (item) => (e) => {
+    if (item.requireAuth) {
+      handleBooksClick(e);
+    } else if (item.onClick) {
+      item.onClick();
+    }
+  };
+
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Books', path: '/books', requireAuth: true, onClick: handleBooksClick },
+    { label: 'Home', path: '/', onClick: handleHomeClick },
+    { label: 'Books', path: '/book', requireAuth: true, onClick: handleBooksClick },
     {
       label: (
         <div className="relative">
           Cart
           {cart.length > 0 && (
-            <span
-              className="absolute -top-1 -right-3 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
-            >
+            <span className="absolute -top-1 -right-3 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
               {cart.length}
             </span>
           )}
@@ -57,14 +88,11 @@ function Navbar() {
   ];
 
   return (
-    <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${
-        sticky ? 'sticky-navbar shadow-2xl bg-base-200 duration-300 transition-all ease-in-out' : ''
-      }`}
-    >
+    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${
+      sticky ? 'sticky-navbar shadow-2xl bg-base-200 duration-300 transition-all ease-in-out' : ''
+    }`}>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          {/* Mobile Dropdown Menu */}
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -82,15 +110,12 @@ function Navbar() {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
+            <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               {navItems.map((item, index) => (
                 <li key={index}>
                   <Link
                     to={item.path}
-                    onClick={item.requireAuth ? item.onClick : undefined}
+                    onClick={handleLinkClick(item)}
                     className={!authUser && item.requireAuth ? 'opacity-50' : ''}
                   >
                     {item.label}
@@ -99,20 +124,18 @@ function Navbar() {
               ))}
             </ul>
           </div>
-          <Link to="/" className="text-2xl font-bold cursor-pointer">
+          <Link to="/" onClick={handleHomeClick} className="text-2xl font-bold cursor-pointer">
             BookStop
           </Link>
         </div>
 
-        {/* Navbar End - Combined navigation items and actions */}
         <div className="navbar-end">
-          {/* Navigation Items */}
           <ul className="hidden lg:flex menu menu-horizontal px-1 mr-4">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
                   to={item.path}
-                  onClick={item.requireAuth ? item.onClick : undefined}
+                  onClick={handleLinkClick(item)}
                   className={!authUser && item.requireAuth ? 'opacity-50' : ''}
                 >
                   {item.label}
@@ -121,10 +144,15 @@ function Navbar() {
             ))}
           </ul>
 
-          {/* Search Input */}
           <div className="hidden md:block mr-4">
             <label className="input input-bordered flex items-center gap-2">
-              <input type="text" className="grow" placeholder="Search" />
+              <input 
+                type="text" 
+                className="grow" 
+                placeholder="Search books..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -140,7 +168,6 @@ function Navbar() {
             </label>
           </div>
 
-          {/* Auth Buttons */}
           {authUser ? (
             <Logout />
           ) : (

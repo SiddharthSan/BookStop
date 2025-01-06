@@ -63,5 +63,4 @@ GEMINI_API_KEY=your_gemini_api_key
 - Admin dashboard for inventory management
 - Enhanced search algorithms
 - Social sharing features
-- 
 ---
